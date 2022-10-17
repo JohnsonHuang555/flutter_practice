@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class MyButton extends StatelessWidget {
-  dynamic icon;
-  dynamic function;
-  MyButton({super.key, this.icon, this.function});
+  final IconData icon;
+  final VoidCallback function;
+  const MyButton({super.key, required this.icon, required this.function});
 
   @override
   Widget build(BuildContext context) {
